@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* App container */
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(10, 10, 10);
+  }
+
+  body{
+    background-color: rgb(5, 5, 5);
+    
+  }
+  
+  /* Header styles */
+  h1 {
+    font-size: 2rem;
+    margin: 2rem;
+    color: #00aaff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* BotCollection and YourBotArmy styles */
+  .bot-collection,
+  .your-bot-army {
+    margin: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #00aaff;
+  }
+
+
+/* Style for bot attributes */
+.bot-cards p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #666;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bot-cards img {
+  max-width: 150px;
 }
+
+/* Style for bot class */
+.bot-cards .bot-class {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+/* Style for bot image */
+
+
+
+  .bot-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    gap: 20px;
+    padding: 20px;
+    padding-left: 15rem;
+  }
+
+  .bot-card {
+    border: 1px solid rgb(11, 11, 10);
+    border-radius: 10px;
+    margin: 1dvh;
+    padding: 1rem;
+    width: 250px;
+    height: 350px;
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0 5px 15px wheat;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color:wheat;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+  }
+  
+  button {
+    background-color: #4bb17b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .bot-card:hover {
+    transform: scale(1.05); /* Scale the card when hovered */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+ .viewbot{
+  display: inline;
+  padding-top: 5rem;
+  border: #666;
+  border-radius: 5rem;
+
+ }
+
+ 
